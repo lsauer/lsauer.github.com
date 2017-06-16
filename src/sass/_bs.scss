@@ -1,0 +1,144 @@
+@import "config";
+
+/* ----- BOOTSTRAP design extensions ----- */
+.indent-sm {
+    margin-left: .8em;
+}
+
+.container-fluid {
+    margin-left: 15%;
+}
+
+.offset-left-xs { 
+    margin-left: 1em;
+}
+
+.offset-vertical-xs {
+    height:1em;
+}
+
+
+.offset-vertical-md {
+    height:2em;
+}
+
+@media (min-width: 700px) { 
+    .container-fluid {
+        margin-left: 5%;
+    }
+
+    .offset-left-xs { 
+        margin-left: 0em;
+    }
+}
+
+.navbar{ 
+    .dropdown-menu {
+        font-size: 1em !important;
+    }
+    .navbar-header h3 {
+        margin-top: 14px;
+        margin-bottom: 10px;
+        padding-left: 0em;
+        font-weight: bolder;
+        font-size: 1.2em;
+    }
+    .navbar-toggle-profile {
+        margin-top: 9px;
+    }
+
+}
+
+
+.navbar-profile {
+    font-size: 1.2em !important;
+}
+
+.navbar-nav > li {
+    font-weight: bolder;
+}
+
+.row.profile-icons {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.profile-icons {
+
+    &> div{
+        z-index: 100;
+    }
+
+    a {
+        margin: .5em;
+        display: inline-block;
+        background-color:#333;
+        opacity: .8;
+        border: 3px solid #666;
+        border-radius: 5em;
+        padding: 1em;
+        z-index: 100;
+    }
+
+    img {
+        transition: transform 1s ease-in-out;
+    }
+
+    img:hover {
+        transform: rotate(360deg);
+    }
+
+}
+
+.gi-navbar { 
+    vertical-align: bottom;
+    margin-right: 8px;
+}
+
+.gi-sm{font-size: .8em;}
+.gi-lg{font-size: 2em;}
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+
+.profile-list .gi-sm {
+    margin-right: .5em;
+    top: 4px;
+}
+
+/*  custom BootStrap design alterations */
+.btn-language {
+    position: relative;
+    float: right;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+#btn-language-switcher  {
+    &> .btn-flag { 
+        padding: 0px 6px 0px 6px;
+        background-color: transparent;
+        border: 1px solid #ddd;
+    }
+    ul {
+        margin: 0px 0px -1px 0px;
+        padding: 0px !important;
+    }
+    li.flag {
+        margin-right: 10px;
+    }
+
+}
+
+.disabled {
+    opacity: .8;
+    background: #ddd;
+    -webkit-touch-callout: none;
+    user-select: none;
+    cursor: default !important;
+}

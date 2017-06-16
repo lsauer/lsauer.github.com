@@ -1,0 +1,406 @@
+@import "config";
+
+
+/* ==========================================================================
+Parallax Scroll
+========================================================================== */
+body, html {
+    height: 100%;
+    min-height: 100%;
+    background-color: $color-dark;
+}
+body {
+
+}
+.no-js {
+    padding-top: 106px;
+}
+h2 {
+    margin-top: 0;
+}
+section {
+    /*    set the minimum width*/
+    min-width: 400px;
+    opacity: 0;
+}
+.loaded section,
+.no-js section {
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
+}
+main {
+    overflow-x: hidden;
+}
+
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+[id^=slide] {
+    overflow-y: auto;
+}
+
+@media (min-width: 500px){ 
+    [id^=slide] {
+        overflow-y: hidden !important;
+    }
+
+}
+
+/* Slide 1 */
+/* licence:CC BY SA  https://pixabay.com/en/technology-keyboard-computing-785742/ */
+#slide-1 .bcg {background-image:url('../images/technology-785742_1920.jpg');
+}
+
+/* Slide 2 */
+#slide-2 .bcg {background: none; background-color: #010101; height: 54em; text-align: center; }
+
+@media (min-width: 1200px) {
+    #slide-2 .bcg {
+        height: 42em !important;
+    }
+}
+
+/* Slide 3 */
+/* licence:CC BY SA  https://pixabay.com/en/tree-structure-networks-internet-200795 */
+#slide-3 .bcg {background-image:url('../images/computer-472016lg.jpg');
+    background-repeat: repeat-x;
+}
+
+/* Slide 4 */
+/* licence:CC BY SA  https://pixabay.com/en/code-coding-computer-data-desktop-1839877/ */
+.curtainContainer {width: 100%; height: 100%; position: relative;}
+.curtainContainer .curtain {width: 300%; height: 1px; background-color: $color-dark; position: absolute; top: 25%; left: 0; opacity: 0}
+.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
+
+#slide-4 .bcg {background-image:url('../images/write-593333.jpg')}
+
+/* Slide 5 */
+/* licence:CC BY SA  https://pixabay.com/en/tree-structure-networks-internet-200795 */
+#slide-5 {padding-top: 20%;}
+
+#slide-5 .contact-link {
+    margin: .5em;
+    display: block;
+}
+
+#slide-5 .contact.text {
+    font-size: 1.2em;
+}
+
+#slide-1 .hsContainer {
+    z-index: 3;
+}
+
+#slide-2 .hsContainer {
+    width: 90%;
+}
+
+.hsContainer {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#slide-3 .hsContent h2,
+#slide-4 .hsContent h2 {
+    display: block;
+    z-index: 1000;
+    color: $color-light;
+    clear: both;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 5em;
+    line-height: 1em;
+}
+
+.hsContent {
+    width: 100%;
+    max-width: 450px;
+    margin: -150px auto 0 auto;
+    display: table-cell;
+    /*    vertical-align: middle;*/
+    color: #ebebeb;
+    /*    padding: 0 8%;*/
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+}
+
+@media (min-width: 550) {
+    .hsContent {
+        width: 100%;
+    }
+}
+
+.hsContent h2,
+.copy h2 {
+    color: $color-light;
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 12px;
+}
+.hsContent p {
+    width: 400px;
+    margin: 0 auto;
+    color: #b2b2b2;
+}
+.hsContent a {
+    color: #b2b2b2;
+    text-decoration: underline;
+}
+.bgBlack {
+    background-color: rgba(0,0,0,0.75);
+    padding: 3px 10px;
+}
+
+
+#slide-2 .hsContent {
+    font-size: 2em;
+}
+
+#slide-2 .hsContent .textstart {
+    display: inline-block;
+    opacity: 0.885529;
+    font-weight: bolder;
+    font-size: 1.6em;
+    left: 10px;
+    position: relative;
+}
+
+.content {
+    align-items: center;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 72px;
+    padding-top: 72px;
+    position: relative;
+    width: 100%
+}
+
+.content#parallax {
+    background: url("../images/poly.png");
+    background-size: cover;
+    position: fixed;
+}
+
+.content:nth-of-type(1) {
+    background: transparent
+}
+
+.content#intro {
+    font-size: 2.5em;
+    color: $color-light
+}
+
+.content#intro h1,.content#intro h2 {
+    margin: 0
+}
+
+
+/*  PROFILE related styles */
+
+.profile-avatar {
+    background-color: #efeff0;
+    font-size: 8rem;
+    border: .4rem solid $color-light;
+    box-shadow: 0 0 0 0.4rem rgba(0,0,0,.07), 0 0.4rem 1.4rem 0.4rem rgba(0,0,0,.2);
+    background: url('../images/lsauer-profile-headshot2.jpg');
+}
+.user-avatar {
+    border-radius: 1000px;
+    width: 8em;
+    height: 8em;
+    font-size: 4rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-size: 8em 8em;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background-color: $color-light;
+    transition: all 1s ease-in-out;
+
+}
+.user-avatar:hover {
+    background-size: 10em 10em;
+    transition: all 1s ease-in-out;
+}
+.profile-intro-top-center {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+    #slide-1-container {
+        transform: scale(1.0) !important;
+        margin-top: 10em !important;
+    }
+}
+
+.bg-cover-norepeat {
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+
+#slide-1-container {
+    transform: scale(.7);
+    position: relative;
+    background-position: -50% 0%;
+    background-color: #111;
+    opacity: 0.8;
+    padding: 4em;
+    border-radius: 1em 1em;
+    color: $color-dark;
+    padding-left: 10%;
+    transition: all 1s ease-in-out;
+    background-repeat:   no-repeat;
+    display: inline-block;
+    margin-top: 4em;
+}
+
+.profile-none {
+    background-image: url();
+    background-position: 50% 0%;
+    transition: all 1s ease-in-out;
+}
+
+.profile-mobile { 
+    @extend .bg-cover-norepeat;
+
+    background-image: url("../images/screenshots/unit_converter_ui.png");
+    background-position: 50% 20% !important;
+    filter: hue-rotate(60%);
+}
+
+.profile-desktop {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/screenshots/dotnet_msdb_sync.jpg");
+    background-position: 40% 80% !important;
+    transition: all 1s ease-in-out;
+    filter: hue-rotate(60%);
+}
+
+.profile-web {
+    @extend .bg-cover-norepeat;
+
+    background-image: url("../images/screenshots/cloud_content_ui.jpg");
+    background-position: 20% 40% !important;
+    filter: hue-rotate(60%);
+
+}
+
+.background-slide {
+    @extend .bg-cover-norepeat;
+
+    background-position: 0% 0%;
+}
+
+.profile-intro-main, .profile-intro-top-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.img-circle {
+    border-radius: 50%;
+}
+
+#lang-switcher {
+    padding: 2px 2px 0px 0px; 
+    font-size: .8em;
+    left: -100%;
+}
+
+#lang-switcher > li {
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 2px 10px 2px 10px;
+}
+
+ul.profile-list > li {
+    width: 6em;
+    white-space: nowrap;
+    list-style: none;
+    color: $color-light;
+    display: block;
+    font-size: 2.7em;
+    line-height: 2em;
+    text-align:justify; 
+    margin-left: .6em;
+    text-decoration: bold;
+    cursor: pointer;
+    padding: .2em;
+}
+
+ul.profile-list > li:hover, 
+.profile-list-hover {
+    display: block;
+    width: 6em;
+    padding-left: .5em;
+    text-align: justify;
+    color: $color-light;
+    font-weight: bolder;
+    background-color: $color-dark;
+    border-radius: 10em;
+    animation: shake 1.0s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    opacity: .8;
+}
+
+.profile-front-arrow {
+    line-height: 1em;
+    padding: .4em;
+    font-size: 3em;
+    border: 1px solid #333;
+    background-color: $color-light;
+    /*    opacity: 0.3;*/
+    border-radius: 10em;
+    color: $color-dark;
+    margin: 6em;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+
+    ul.profile-list > li:nth-child(2) {
+        margin-left: 1.4em;
+    }
+}

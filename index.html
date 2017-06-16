@@ -1,31 +1,489 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>MASCM Coming soon...</title>
-<style>
-		html {
-			overflow-y: scroll;
-			background: #5f5f5f url('res/html_bg_.png') repeat-x scroll;
-		}
-</style>
-  
-<meta http-equiv="Content-Type" content="text/html;charset=windows-1252">
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</head>
-    <body style="text-align:center; padding:10px 0px 10px 20%;">
-    <a href="https://twitter.com/sauerlo" class="twitter-follow-button" data-show-count="true" data-lang="en" style="text-align:right">Follow @sauerlo</a>
-      <div style="position:absolute; top:100px;">
-        <img style="margin-left:auto; clear:both; display:block;" src="res/capture_04272012_171108_50p.png">
-        <!--<img src="res/capture0.jpg" style=" z-index:3; clear:both; display:block; position:relative; top:-300px; left:0px;">-->
-      </div>
-    <div style="position:absolute; top:300px;  
-      font:bold 50px tahoma, verdana; color: #000; text-shadow: #909090 6px 6px 9px; 
-      transform: rotate(-90deg);
-		  -webkit-transform: rotate(-45deg); 
-		  -moz-transform: rotate(-45deg);	
-		  -o-transform: rotate(-45deg) !important;
-		"> Coming 3rd July '12!</div>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="robots" content="index, follow">
+        <title>Lorenz Lo Sauer - Developer</title>
+
+        <meta name="description" content="Lorenz Lo Sauer is an experienced web, mobile and cross-platform desktop developer.">
+
+        <meta name="twitter:card" content="summary_large_image">
+
+        <meta name="twitter:site" content="@sauerlo">
+
+        <meta property="og:title" content="Lorenz Lo Sauer - More than your trusted developer">
+        <meta property="og:description" content="Lorenz Lo Sauer is a passionate full stack software developer bringing with him many years of professional programming experience of utilizing primarily C#, PHP, JavaScript, Python and R to facilitate for his clients rapid development of creative products, never before seen in the market.">
+
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="src/images/favicon-32x32.png">
+        <meta property="og:url" content="https://lsauer.github.io">
+        <meta property="og:site_name" content="Lorenz Lo Sauer Developer Presentation">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="src/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon-16x16.png">
+        <link rel="manifest" href="src/data/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="author" href="https://plus.google.com/107612997855711957528/about"/>
+
+        <link rel="stylesheet" href="src/dist/dist-main.min.css"/>
+
+    </head>
+    <body class="loading">
+        <!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+        <div class="centeredDiv loading-container">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+
+        <main>
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+                <div class="btn-group btn-language" id="btn-language-switcher" data-lang-type-current="us">
+                    <button class="btn btn-md btn-flag"><ul class="f32"><li id="btn-language-flag" class="flag us"></li></ul></button>
+                    <button data-toggle="dropdown" class="btn btn-md dropdown-toggle"><span class="caret"></span></button>
+                    <ul class="dropdown-menu" id="lang-switcher">
+                        <li data-lang-type="es"><ul class="f32" data-lang-us="Spanish" data-lang-de="Spanisch" data-lang-es="Español"><li class="flag es" ></li>Spanish</ul></li>
+
+                        <li class="disabled" data-lang-type="us"><ul class="f32" data-lang-us="English" data-lang-de="Englisch" data-lang-es="Inglés"><li class="flag us" ></li>English</ul></li>
+
+                        <li data-lang-type="de"><ul class="f32" data-lang-us="German" data-lang-de="Deutsch" data-lang-es="Alemán"><li class="flag de"></li>German</ul></li>
+                    </ul>
+                </div>
+
+                <div class="container navbar-profile">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle navbar-toggle-profile" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <h3 class="offset-left-xs">Mag. Lorenz Lo Sauer, BSc.</h3>
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav pull-right">
+                            <li>
+                                <a href="#slide-4" data-lang-us="Experience" data-lang-de="Erfahrung" data-lang-es="Experiencía"><i class="glyphicon glyphicon-briefcase gi-navbar"></i>Experience</a>
+                            </li>
+                            <li>
+                                <a href="Lorenz_Lo_Sauer-Resume-Curriculum-Vitae-CV.pdf" target="_blank" data-lang-us="Resume(CV)" data-lang-de="Lebenslauf" data-lang-es="Currículum"><i class="glyphicon glyphicon-cloud-download gi-navbar"></i>Resume(CV)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <section id="slide-1" class="homeSlide">
+                <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+                    <div class="hsContainer">
+                        <div class="hsContent"  data-0="opacity: 1" data-3
+                             00="opacity: 0" data-anchor-target="#slide-1-container">
+
+                            <div class="container">
+                                <div class="row" id="slide-1-container">
+                                    <div class="col-lg-3 col-xs">
+                                        <h3 class="print-name-titular">Mag. Lorenz Lo Sauer, BSc.</h3>
+                                        <div class="profile-intro-top-center"> <div class="profile-intro-main"> 
+                                            <div class="user-avatar-plain profile-avatar user-avatar">
+                                            </div> 
+
+                                            </div>
+                                        </div>                                
+                                    </div>
+                                    <div class="col-lg-3 col-xs hidden-md">&nbsp;</div>
+                                    <div class="col-lg-3 col-xs">
+                                        <ul class="profile-list">
+                                            <li class="profile-headline animation-shake" data-type="mobile" data-lang-es="móvil" data-lang-de="Handy"><span class="glyphicon glyphicon-phone gi-sm" aria-hidden="true"></span>mobile</li>
+                                            <li class="profile-headline animation-shake indent-sm" data-type="desktop" data-lang-es="escritorio" data-lang-de="Desktop"><span class="glyphicon glyphicon-dashboard gi-sm" aria-hidden="true"></span>desktop </li>
+                                            <li class="profile-headline animation-shake" data-type="web" data-lang-es="web" data-lang-de="Web"><span class="glyphicon glyphicon-globe gi-sm" aria-hidden="true"></span>web</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row hidden-xs hidden-md">
+                                    <div class="col-xs">
+                                        <span class="glyphicon glyphicon-triangle-bottom profile-front-arrow" data--200-bottom="opacity: 0.4" data-206-top="opacity: 0.4" data-106-top="opacity: 0"  data-anchor-target="#slide-1-container"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="profile-headline"></h2>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="slide-2">
+                <div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);" data-anchor-target="#slide-2">
+                    <div class="hsContainer">
+                        <div class="hsContent">
+                            <div class="offset-vertical-md"></div>
+
+                            <h2 class="textstart" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 0" data-106-top="opacity: 1.0"  data-anchor-target="#slide-2 h2">L</h2>
+                            <span data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 0" data-106-top="opacity: 1.0" data-anchor-target="#slide-2 h2" data-lang-es="orenz tiene" data-lang-de="orenz hat eine ">orenz has a </span>
+                            <span id="intro-text1" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 1.0" data-anchor-target="#slide-2 h2" data-lang-es="destreza" data-lang-de="Begabung"> 
+                                gift 
+                            </span>
+                            <span id="intro-text2b" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 0" data-106-top="opacity: 1.0" data-anchor-target="#intro-text1" data-lang-es="y" data-lang-de="und">
+                                and 
+                            </span>
+                            <span id="intro-text1c" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 1.0" data-anchor-target="#slide-2 h2" data-lang-es="pasión" data-lang-de="Leidenschaft">
+                                passion 
+                            </span>
+                            <span id="intro-text2d" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 0" data-106-top="opacity: 1.0" data-anchor-target="#intro-text1" data-lang-es="para diseñar" data-lang-de="für das Entwerfen von">
+                                for designing</span>
+                            <span id="intro-text1c" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 1.0" data-anchor-target="#slide-2 h2" data-lang-de="Software">software</span>
+                            <span id="intro-text2d" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 0" data-106-top="opacity: 1.0" data-anchor-target="#intro-text1" data-lang-es="interfaces del usuario,  poniendose en el lugar de los usuarios" data-lang-de="Benutzeroberflächen, während er sich in die Rolle der Benutzer hineinversetzt.">
+                                user interfaces, whilst putting himself in the shoes of the users.
+                            </span>
+                            <div class="offset-vertical-xs"></div>
+                            <span id="intro-text2b" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 0" data-106-top="opacity: 1.0" data-anchor-target="#intro-text1" data-lang-es="Lleva muchos años en programación profesional, utilizando herramientas y lenguajes de programación de vanguardia para entregar productos" data-lang-de="Er verfügt über viele Jahre der professionellen Programmierung mit modernsten Tools und Programmiersprachen, um" >
+                                He brings along many years of professional programming experience, utilizing cutting edge tools and programming languages to deliver</span>
+                            <span id="intro-text1c" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 1.0" data-anchor-target="#slide-2 h2" data-lang-es="mantenibles" data-lang-de="wartbare">maintainable</span>
+                            <span id="intro-text2b" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 0" data-106-top="opacity: 1.0" data-anchor-target="#intro-text1" data-lang-es="de software con una filosofía" data-lang-de="Softwareprodukte mit einer">
+                                software products with an </span>
+                            <span id="intro-text1c" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 1.0" data-anchor-target="#slide-2 h2" data-lang-es="ágil" data-lang-de="agilen">agile
+                            </span>
+                            <span id="intro-text2b" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 0" data-106-top="opacity: 1.0" data-anchor-target="#intro-text1" data-lang-es="." data-lang-de="Philosphie zu liefern.">philosophy.</span>
+                            <div class="offset-vertical-xs"></div>
+                            <span id="intro-text2b" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 0" data-106-top="opacity: 1.0" data-anchor-target="#intro-text1" data-lang-es="Sus productos son marcados con una sólida comprensión de lo que el" data-lang-de="Seine Produkte sind gezeichnet von einem robusten Verständnis der">
+                                His products are marked with a robust understanding of what the</span>
+                            <span id="intro-text1c" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 1.0" data-anchor-target="#slide-2 h2" data-lang-es="cliente necesita" data-lang-de="Kundenbedürfnisse">client needs</span>
+                            <span id="intro-text2b" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 0" data-106-top="opacity: 1.0" data-anchor-target="#intro-text1" data-lang-es="a la hora de lanzar el producto a un público crítico." data-lang-de="in der Stunde des Starts des Produkts vor einem kritischen Publikum.">
+                                at the hour of lauching the product to a critical audience.
+                            </span>
+                            <div class="offset-vertical-md"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="slide-3" class="homeSlide">
+                <div class="bcg" data-center="background-position: -40px 0px;" data-bottom-top="background-position: -100px 200px" data-top-bottom="background-position: -40px -100px" data-anchor-target="#slide-3">
+                    <div class="hsContainer">
+                        <div class="hsContent curtainContainer">
+
+                            <div class="curtain" data-bottom-top="opacity: 0" data-106-top="height: 0%; opacity: 0; top: 0%;" data-center="height: 100%; opacity: 0.7; top: 0%;" data-anchor-target="#slide-3"></div>
+                            <div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-3 .copy">
+
+                            </div>
+                            <h2 data-center="opacity: 1" data--200-bottom="opacity: 0.3" data-206-top="opacity: 0.3" data-106-top="opacity: 1"  data-anchor-target="#slide-3 .info-card" data-lang-es="He trabajado aquí" data-lang-de="Wo ich gearbeitet habe">
+                                Places I've worked</h2>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="info-card col-xs">
+                                        <div class="front">
+                                            <div class="frontTitle">
+                                                Ixolit
+                                            </div>
+                                            <div class="frontLogo logo-ixolit">
+                                            </div>
+                                            <div class="frontLocation">
+                                                <a href="http://www.ixolit.com" target="_blank">ixolit.com</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="back">
+                                            <span data-lang-es="IXOLIT es una empresa internacional de TI que ofrece desarrollo web y de software personalizado, infraestructura gestionada, consultoría de TI." data-lang-de="IXOLIT ist ein internationales IT-Unternehmen, das maßgeschneiderte Web- & Software-Entwicklung, verwaltete Infrastruktur, IT-Beratung anbietet.">
+                                                IXOLIT is an international IT company offering customized web & software development, managed infrastructure and IT consulting.
+                                            </span>
+                                            <div class="backLocation">
+                                                <a href="http://www.ixolit.com" target="_blank">ixolit.com</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="info-card col-xs">
+                                        <div class="front">
+                                            <div class="frontTitle">
+                                                Anexia
+                                            </div>
+                                            <div class="frontLogo logo-anexia">
+                                            </div>
+                                            <div class="frontLocation">
+                                                <a href="http://www.anexia.com" target="_blank">anexia.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <span data-lang-es="Anexia desarrolla soluciones de gestíon de hosting y software de alta calidad desde oficinas de Viena, Graz, Munich, Colonia y Nueva York" data-lang-de="Anexia entwickelt hochqualitative Managed Hosting- und Softwarelösungen aus Niederlassungen in Wien, Graz, München, Köln und New York City.">
+                                                Anexia develops high-quality managed hosting and software solutions from offices in Vienna, Graz, Munich, Cologne and New York City.
+                                            </span>
+                                            <div class="backLocation">
+                                                <a href="http://www.anexia.com" target="_blank">anexia.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="info-card  col-xs">
+                                        <div class="front">
+                                            <div class="frontTitle">
+                                                MoSyS
+                                            </div>
+                                            <div class="frontLogo logo-univie">
+                                            </div>
+                                            <div class="backLocation">
+                                                <a href="https://mosys.univie.ac.at/" target="_blank">mosys.univie.ac.at</a>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <span data-lang-es="MoSys integra ideas de las sistemas teoréticas utilizando genómica, transcriptómica, proteómica y metabolómica" data-lang-de="MoSys integriert systemtheoretische Ideen mit Genomik, Transkriptomik, Proteomik und Metabolomik.">
+                                                MoSys integrates system-theoretical ideas using genomics, transcriptomics, proteomics and metabolomics.
+                                            </span>
+                                            <div class="backLocation">
+                                                <a href="https://mosys.univie.ac.at/" target="_blank">mosys.univie.ac.at</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="info-card col-xs">
+                                        <div class="front">
+                                            <div class="frontTitle">
+                                                LinkResearch
+                                            </div>
+                                            <div class="frontLogo logo-cemper">
+                                            </div>
+                                            <div class="frontLocation">
+                                                <a href="http://www.linkresearchtools.com" target="_blank">linkresearchtools.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <span data-lang-es="LinkResearchTools es una plataforma de  datos grandes para ayudar a las agencías de publicidad y a las marcas a clasificarse mejor en Google. Entender y superar a su competencia!" data-lang-de="LinkResearchTools ist eine Big Data Platform, die Werbeagenturen und Marken bei Google besser unterstützt. Verstehen und übertreffen Sie Ihre Konkurrenz!">
+                                                LinkResearchTools is a big data platform that helps advertising agencies and brands rank better in Google. Understand and outperform your competition!
+                                            </span>
+                                            <div class="backLocation">
+                                                <a href="http://www.linkresearchtools.com" target="_blank">linkresearchtools.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="info-card col-xs">
+                                        <div class="front">
+                                            <div class="frontTitle">
+                                                WunderWerk
+                                            </div>
+                                            <div class="frontLogo logo-ww">
+                                            </div>
+                                            <div class="frontLocation">
+                                                <a href="http://www.wunderwerk.at" target="_blank">wunderwerk.at</a>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <span data-lang-es="WunderWerk es un estudio de producción de medios digitales, centrado en ofrecer soluciones personalizadas de alto perfil para clientes exigentes, abastaciendo al mercado austriaco." data-lang-de="WunderWerk ist ein digitales Medienproduktionsstudio, das sich auf die Bereitstellung hochkarätiger, kundenspezifischer Lösungen für anspruchsvolle Kunden konzentriert und auf dem österreichischen Markt vermittelt.">
+                                                WunderWerk is an digital media production studio focused on delivering high profile custom solutions for demanding clients, catering the Austrian market.
+                                            </span>
+                                            <div class="backLocation">
+                                                <a href="http://www.wunderwerk.at/online" target="_blank">wunderwerk.at</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+
+                        </div> 
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="slide-4" class="homeSlide homeSlideTall">
+                <div class="bcg" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4">
+                    <div class="hsContainer">
+                        <div class="hsContent curtainContainer">
+
+                            <div class="curtain" data-bottom-top="opacity: 0; 1000px;" data-106-top="height: 1%; opacity: 0; top: 0%;" data-center="height: 100%; opacity: 0.7; top: 0%;" data-anchor-target="#slide-4"></div>
+                            <div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-4 .copy">
+
+                            </div>
+                            <h2 data-center="opacity: 1" data--200-bottom="opacity: 0.3" data-206-top="opacity: 0.3" data-106-top="opacity: 1"  data-anchor-target="#slide-4 .info-card">
+                                <span data-lang-us="My Projects" data-lang-de="Meine Projekte" data-lang-es="Mis proyectos">
+                                    My Projects</span>
+                            </h2>
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="info-card">
+                                        <div class="front">
+                                            <div class="frontTitle">
+                                                .NET CCT
+                                            </div>
+                                            <div class="frontLogo project-netcct">
+                                            </div>
+                                            <div class="frontLocation">
+
+                                                <img src="src/images/shield-year-2016-lightgrey.svg" />
+                                                <img src="src/images/shield-src-C%23-lightgrey.svg" alt="lightgrey">
+                                            </div>
+                                        </div>
+
+                                        <div class="back">
+                                            <span data-lang-es="Intuitivo, fácil de usar, portable, probado, documentado, serializable, seguro para subprocesos, fuertemente tipado biblioteca de conversión para .NET" data-lang-de="Intuitive, einfach zu bedienende, portable, getestete, dokumentierte, serialisierbare, threadsichere, stark typisierte Konverterbibliothek für .NET">
+                                                Intuitive, easy-to-use, portable, tested, documented, serializable, thread-safe, strongly typed converter library for .NET
+                                            </span>
+                                            <div class="backLocation">
+
+                                                <a href="https://github.com/lsauer/dotnet-portable-cast-convert-transform" target="_blank"><img src="/src/images/shield-web-repository-green.svg" alt="green"></a>
+                                                <a href="https://ci.appveyor.com/project/lsauer/dotnet-portable-cast-convert-transform/build/3.2.0.94-beta" target="_blank"><img src="/src/images/shield-CI-AppVeyor-orange.svg" alt="green"></a>
+                                                <a href="https://travis-ci.org/lsauer/dotnet-portable-cast-convert-transform/builds/172291740" target="_blank"><img src="/src/images/shield-CI-travis-blue.svg" alt="green"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="info-card">
+                                        <div class="front">
+                                            <div class="frontTitle">
+                                                Vector.JS
+                                            </div>
+                                            <div class="frontLogo project-vectorjs">
+                                            </div>
+                                            <div class="frontLocation">
+                                                <img src="src/images/shield-year-2013-lightgrey.svg" />
+                                                <img src="src/images/shield-src-JS-lightgrey.svg" alt="lightgrey">
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <span data-lang-es="Operadores para vectores u otros objetos de JavaScript, tal y como está acostumbrado. Demúestralo en acción!" data-lang-de="Operatoren für Vektoren oder andere JavaScript-Objekte, genau wie Sie es gewohnt sind. Demo in Aktion!">
+                                                Operators for vectors or other JavaScript objects, just as you are used to. Demo it in action!
+                                            </span>
+                                            <div class="backLocation">
+
+                                                <a href="https://github.com/lsauer/vector-js" target="_blank"><img src="/src/images/shield-web-repository-green.svg" alt="green"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="info-card">
+                                        <div class="front">
+                                            <div class="frontTitle">
+                                                Entropy
+                                            </div>
+                                            <div class="frontLogo project-entropy">
+                                            </div>
+                                            <div class="frontLocation">
+                                                <img src="src/images/shield-year-2011-lightgrey.svg" />
+                                                <img src="src/images/shield-src-C%23-lightgrey.svg" alt="lightgrey">
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <span data-lang-es="ent es una herramienta pequeña para el símbolo del sistema, lo cual traza varias métricas relacionadas con la entropía de archivos o streams de entrada estándar" data-lang-de="Ent ist ein kleines, flinkes Kommandozeilen-Dienstprogramm, das verschiedene Entropie-bezogene Metriken von Dateien oder Pipe / Stdin-Streams zeichnet">
+                                                Ent is a small, fast command line utility, plotting various entropy related metrics of files or pipe/stdin streams
+                                            </span>
+                                            <div class="backLocation">
+                                                <a href="https://github.com/lsauer/entropy" target="_blank"><img src="/src/images/shield-web-repository-green.svg" alt="green"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="info-card">
+                                        <div class="front">
+                                            <div class="frontTitle">
+                                                Chrome SR
+                                            </div>
+                                            <div class="frontLogo project-chrome">
+                                            </div>
+                                            <div class="backLocation">
+                                                <img src="src/images/shield-year-2012-lightgrey.svg"/>
+                                                <img src="src/images/shield-src-JS-lightgrey.svg" alt="lightgrey">
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <span data-lang-es="Restaura archivos corruptos de la sesíon del navegador Chrome/Chromium después de un fallo, directamente en una aplicación web. Vealo en acción!" data-lang-de="Stellt nach einem Absturz direkt in einer Web-App, korrupte Chrome / Chromium Browser-Session-Dateien wieder her. - Sehen Sie es in Aktion!">
+                                                Restores corrupt Chrome /Chromium Browser session files after a crash directly in a web-app. - See it in action!
+                                            </span>
+                                            <div class="backLocation">
+                                                <a href="https://github.com/lsauer/chrome-session-restore" target="_blank"><img src="/src/images/shield-web-repository-green.svg" alt="green"></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="info-card">
+                                        <div class="front">
+                                            <div class="frontTitle">
+                                                KeyBoarder
+
+                                            </div>
+                                            <div class="frontLogo project-keyboarder">
+                                            </div>
+                                            <div class="frontLocation">
+                                                <img src="src/images/shield-year-2013-lightgrey.svg"/>
+                                                <img src="src/images/shield-src-JS-lightgrey.svg" alt="lightgrey">
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <span data-lang-es="KeyBoarder es una pequeña y rápida biblioteca JavaScript para visualizar dinámicamente atajos de teclado visualmente atractivos y navegables." data-lang-de="KeyBoarder ist eine kleine, schnelle Javascript-Bibliothek zum dynamischen Rendering von visuell ansprechenden, navigierbaren Tastenkombinationen.">
+                                                KeyBoarder is a small, fast javascript library for dynamically rendering visually appealing, navigatable keyboard shortcuts.
+                                            </span>
+                                            <div class="backLocation">
+                                                <a href="https://github.com/lsauer/KeyBoarder" target="_blank"><img src="/src/images/shield-web-repository-green.svg" alt="green"></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section id="slide-5" class="homeSlide">
+                <div class="bcg" data-top="background-position: 0px 0px;" data-bottom="background-position: 0px 400px;" data-anchor-target="#slide-5">
+                    <div class="hsContainer">
+                        <div class="hsContent" data-0-top="opacity: 1" data-100-bottom="opacity: 0.5" data-anchor-target="#slide-5">
+
+                            <h2 data-lang-es="Visítame aquí:" data-lang-de="Besuchen Sie mich hier: ">Visit me here:</h2>
+
+                            <div class="row profile-icons">
+                                <div class="col-xs col-md-4">
+                                    <a target="_blank" href="https://stackoverflow.com/users/901946/lorenz-lo-sauer"><img src="src/images/stackoverflow.png"></a>
+                                </div>
+                                <div class="col-xs col-md-4">
+                                    <a target="_blank" href="https://github.com/lsauer"><img src="src/images/github.png"></a>
+                                </div>
+                                <div class="col-xs col-md-4">
+                                    <a target="_blank" href="https://www.linkedin.com/in/lorenz-lo-sauer-1075893a/"><img src="src/images/linkedin.png"></a>
+                                </div>
+                            </div>
+
+                            <hr/>
+                            <p class="contact-text" data-lang-es="o ponerse en contacto directamente" data-lang-de="oder nehmen Sie direkt Kontakt auf:">or get into contact directly:  
+                                <a class="contact-link" href="mailto://lorenz.lo.sauer@gmail.com" target="_blank">   <button class="zocial email"> email</button></a></p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <script>window.jQuery || document.write('<script src="src/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="src/dist/dist-compiled.min.js"></script>
     </body>
 </html>
-
-<!-- This document saved from http://metgate.org/ -->

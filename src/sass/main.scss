@@ -1,0 +1,117 @@
+@import "config";
+@import "cards";
+@import "social";
+@import "loader";
+@import "bs";
+@import "slides";
+@import "print";
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+
+@font-face {
+    font-family: Rajdhani-Regular;
+    src: url(../fonts/Rajdhani-Regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Rajdhani-Light;
+    src: url(../fonts/Rajdhani-Light.ttf) format("truetype")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font-main;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+html {
+    width: 100%;
+    height: 100%
+}
+
+html ::-webkit-scrollbar {
+    width: .5em;
+    height: .5em
+}
+
+html ::-webkit-scrollbar-thumb {
+    background: #212121
+}
+
+html ::-webkit-scrollbar-track {
+    background: #909090
+}
+
+html body {
+    scrollbar-face-color:#212121;
+    scrollbar-track-color:#909090
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    line-height: 1.4;
+}
+
+
+
+/* Remove text-shadow in selection highlight */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+:focus {
+    outline: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: $color-dark;
+    padding: 0.2em 0;
+}
+
+/* shake animation */
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

@@ -1,0 +1,51 @@
+@import "config";
+
+/* Social buttons */
+.social {
+    list-style: none;
+    padding: 0px;
+    margin-top: 25px;
+    text-align: center;
+
+    a {
+        position: relative;
+        display: inline-block;
+        min-width: 40px;
+        padding: 10px 0px;
+        margin: 0px 5px;
+        overflow: hidden;
+        text-align: center;
+        background-color: rgb(215, 215, 215);
+        border-radius: 40px;
+    }
+}
+
+a {
+    &.social-icon {
+        text-decoration: none !important;
+        box-shadow: 0px 0px 1px rgb(51, 51, 51);
+        box-shadow: 0px 0px 1px rgba(51, 51, 51, 0.7);
+    }
+    &.social-icon:hover {
+        color: rgb(255, 255, 255) !important;
+    }
+    &.facebook {
+        color: rgb(59, 90, 154) !important;
+    }
+    &.facebook:hover {		
+        background-color: rgb(59, 90, 154) !important;
+    }
+    &.twitter {
+        color: rgb(45, 168, 225) !important;
+    }
+    &.twitter:hover {
+        background-color: rgb(45, 168, 225) !important;
+    }
+    &.github {
+        color: rgb(51, 51, 51) !important;
+    }
+    &.github:hover {
+        background-color: rgb(51, 51, 51) !important;
+    }
+}
+

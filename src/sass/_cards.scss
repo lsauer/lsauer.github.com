@@ -1,0 +1,137 @@
+@import "config";
+
+.info-card {
+    float: left;
+    margin: 1em;
+    -webkit-perspective: 600px;
+
+    &:hover .back {
+        -webkit-transform: rotateX(0);
+    }
+    &:hover .front {
+        -webkit-transform: rotateX(180deg);
+    }
+}
+
+.front, .back {
+    width: 280px;
+    height: 320px;
+    transition: -webkit-transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    background-position: 0% 0%;
+    opacity: 0.8;
+    border-radius: 1em 1em;
+    padding-left: 10%;
+    transition: all .5s ease-in-out;
+}
+
+.front {
+    color: $color-light;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color:#000;
+    opacity: .8;
+    border: 3px solid #666;
+    z-index: 100;
+
+    a { 
+        text-decoration: none !important;
+    }
+}
+
+.back {
+    color: #000;
+    background-color: $color-light;
+    padding: 20px;
+    -webkit-transform: rotateX(-180deg);
+    overflow: hidden;
+}
+
+.frontLocation, .backLocation {
+    margin-top: 2em;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+.frontTitle {
+    padding-top: .6em;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 3em;
+    height:130px;
+    z-index: 200;
+}
+
+.frontLogo {
+    width: 90%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center  center;
+    background-size: contain;
+    background-color: $color-light;
+    opacity: .9;
+}
+
+.logo-ixolit {
+    background-image: url(../images/logo_ixolit.jpg);
+}
+
+.logo-anexia{
+    background-image: url('../images/logo_anexia.png');
+}
+
+.logo-cemper {
+    background-image: url('../images/logo_cemper.jpg');
+}
+
+.logo-univie {
+    background-image: url('../images/logo_univie.png');
+}
+
+.logo-ww {
+    background-image: url('../images/logo_ww.png');
+}
+
+.project-netcct {
+    background-image: url(../images/project_cct.png);
+}
+
+.project-vectorjs{
+    background-image: url('../images/project_vectorjs.png');
+}
+
+.project-chrome {
+    background-image: url('../images/project_chrome.jpg');
+}
+
+.project-entropy {
+    background-image: url('../images/project_ent.png');
+}
+
+.project-keyboarder {
+    background-image: url('../images/project_keyboarder.png');
+}
+
+
+@media (min-width: 1750px) {
+    .front, .back {
+        width: 400px;
+        height: 450px;
+    }
+    .back>span:nth-child(1) {
+        font-size: 1.5em; 
+    }
+    .backLocation, .frontLocation {
+        transform: scale(1.5);
+
+    }
+    .info-card {
+        margin: 2em;
+    }
+}
