@@ -24,10 +24,9 @@ module.exports = function(grunt){
             'src/js/main.js'],
 
         watch_files : [
-            'src/less/*',
+            'src/sass/*',
             'src/js/*',
-            'src/vendor/css/*',
-            'src/vendor/js/*'],
+            'src/css/*'],
 
         sass_files : 'src/vendor/css'
     };
@@ -82,7 +81,7 @@ module.exports = function(grunt){
         },
         watch: {
             css: {
-                files: ['src/sass/stats.scss'],
+                files: ['src/sass/*'],
                 tasks: ['sass']
             },
             src: {

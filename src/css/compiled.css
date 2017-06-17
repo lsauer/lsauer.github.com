@@ -421,10 +421,6 @@ section {
   transition: opacity 300ms ease-out;
 }
 
-main {
-  overflow-x: hidden;
-}
-
 .bcg {
   background-position: center center;
   background-repeat: no-repeat;
@@ -434,15 +430,6 @@ main {
   width: 100%;
 }
 
-[id^=slide] {
-  overflow-y: auto;
-}
-
-@media (min-width: 500px) {
-  [id^=slide] {
-    overflow-y: hidden !important;
-  }
-}
 /* Slide 1 */
 /* licence:CC BY SA  https://pixabay.com/en/technology-keyboard-computing-785742/ */
 #slide-1 .bcg {
@@ -684,6 +671,9 @@ main {
   #slide-1-container {
     transform: scale(1) !important;
     margin-top: 10em !important;
+    margin-left: auto;
+    padding-left: 10%;
+    padding: 4em;
   }
 }
 .bg-cover-norepeat, .profile-mobile, .profile-web, .background-slide {
@@ -698,14 +688,14 @@ main {
   background-position: -50% 0%;
   background-color: #111;
   opacity: 0.8;
-  padding: 4em;
+  padding: 1em;
   border-radius: 1em 1em;
   color: #000;
-  padding-left: 10%;
   transition: all 1s ease-in-out;
   background-repeat: no-repeat;
   display: inline-block;
   margin-top: 4em;
+  margin-left: -15%;
 }
 
 .profile-none {

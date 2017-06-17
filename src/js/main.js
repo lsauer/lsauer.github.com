@@ -84,8 +84,6 @@
                     });
                 });
 
-                // Setup variables
-                $window = $(window);
                 $body = $('body');
 
                 //FadeIn all sections   
@@ -114,7 +112,8 @@
                     });
 
                     // Get window size
-                    winH = $window.height();
+                    winH = viewportSize.getHeight();
+                    winW = viewportSize.getWidth();
 
                     // Keep minimum height 550
                     if(winH <= 550) {
@@ -126,25 +125,29 @@
                     // Resize our slides
                     $('.homeSlide').height(winH);
 
-                    if( $window.width() >= 760 && $window.height() <= 1000){
+                    if( winW >= 760 && winH <= 1000){
                         $('#slide-3').css('height', '180px');
                         $('#slide-4').css('height', '180rem');
                         $('#slide-5').css('height', '100rem');
-                    }if($window.width() <= 760 && $window.height() >= 1000){
+                    }if(winW <= 760 && winH >= 1000){
                         $('#slide-1').css('height', '100rem');
                         $('#slide-2').css('height', '170rem');
                         $('#slide-3').css('height', '270rem');
                         $('#slide-4').css('height', '270rem');
                         $('#slide-5').css('height', '100rem');
-                    }
-                    else if($window.width() <= 760) {
+                    }else if(winW <= 500){
+                        $('#slide-2').css('height', '270rem');      
+                        $('#slide-3').css('height', '250rem');
+                        $('#slide-4').css('height', '250rem');
+                        $('#slide-5').css('height', '100rem');
+                    } else if(winW <= 760) {
                         // Small screens
                         $('#slide-1').css('height', '90rem');
                         $('#slide-2').css('height', '170rem');
                         $('#slide-3').css('height', '270rem');
                         $('#slide-4').css('height', '270rem');
                         $('#slide-5').css('height', '100rem');
-                    } else if($window.width() <= 1150) {
+                    } else if(winW <= 1150) {
                         $('#slide-1').css('height', '130rem');
                         $('#slide-3').css('height', '180rem');
                         $('#slide-4').css('height', '180rem');
