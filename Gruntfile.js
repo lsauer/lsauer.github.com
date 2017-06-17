@@ -18,6 +18,7 @@ module.exports = function(grunt){
             'src/js/vendor/skrollr.js',
             'src/js/vendor/imagesloaded.js',
             'src/js/vendor/bootstrap.min.js',
+            'src/js/vendor/hammer.min.js',
             'src/js/main.js'],
 
         js_hint_files : [

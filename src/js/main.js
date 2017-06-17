@@ -66,21 +66,25 @@
                 $('.profile-list li').each(function(i, el){
                     $(el)
                         .hover(function(){
+                        $(this).addClass('.profile-list-hover');
                         $('.profile-avatar').fadeTo("fast", 0.0, "linear");
                         var hoverType = $(this).data('type');
 
                         bgProfile.removeClass('background-slide')
                             .addClass('profile-' + hoverType);
                     }, function(){
+                        $(this).removeClass('.profile-list-hover');
                         $('.profile-avatar').stop().fadeTo("fast", 1, "linear");
                         var hoverType = $(this).data('type');
                         bgProfile.addClass('background-slide')
                             .removeClass('profile-' + hoverType);
                     });
-                    $(el).on('click', function(){
+                    $(el).on('click tap', function(){
                         $('#slide-1 ul.profile-list > li').removeClass('.profile-list-hover');
-                        $(this).addClass('.profile-list-hover');
+                        
                         $(this).trigger('mouseover');
+                        var elInner = $(this);
+                        window.setTimeout(function(){  elInner.trigger('mouseleave');}, 2000);
                     });
                 });
 
