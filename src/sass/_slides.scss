@@ -246,16 +246,6 @@ section {
     margin-bottom: 2rem;
 }
 
-@media (min-width: 800px) {
-    #slide-1-container {
-        transform: scale(1.0) !important;
-        margin-top: 10em !important;
-        margin-left: auto;
-        padding-left: 10%;
-        padding: 4em;
-    }
-}
-
 .bg-cover-norepeat {
     background-repeat: no-repeat;
     background-size: cover;
@@ -276,6 +266,28 @@ section {
     display: inline-block;
     margin-top: 4em;
     margin-left: -15%;
+}
+
+@media (min-width: 300px) {
+    #slide-1-container {
+        margin-left: -35%;
+    }
+}
+
+@media (min-width: 375px) {
+    #slide-1-container {
+        margin-left: -25%;
+    }
+}
+
+@media (min-width: 800px) {
+    #slide-1-container {
+        transform: scale(1.0) !important;
+        margin-top: 10em !important;
+        margin-left: auto;
+        padding-left: 10%;
+        padding: 4em;
+    }
 }
 
 .profile-none {

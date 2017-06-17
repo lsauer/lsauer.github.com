@@ -136,7 +136,8 @@
                         $('#slide-4').css('height', '270rem');
                         $('#slide-5').css('height', '100rem');
                     }else if(winW <= 500){
-                        $('#slide-2').css('height', '270rem');      
+                        $('#slide-1').css('height', '100rem');
+                        $('#slide-2').css('height', '290rem');      
                         $('#slide-3').css('height', '250rem');
                         $('#slide-4').css('height', '250rem');
                         $('#slide-5').css('height', '100rem');

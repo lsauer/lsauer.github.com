@@ -22,6 +22,12 @@
     height:2em;
 }
 
+@media (min-width: 300px) { 
+    .container-fluid {
+        margin-left: 0% !important;
+    }
+}
+
 @media (min-width: 700px) { 
     .container-fluid {
         margin-left: 5%;
@@ -49,6 +55,15 @@
 
 }
 
+@media (max-width: 767px) {
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+}
 
 .navbar-profile {
     font-size: 1.2em !important;
