@@ -281,6 +281,10 @@ body.loading > .spinner {
     margin-left: 0em;
   }
 }
+html.touch #nav-anchor-4 {
+  display: none;
+}
+
 .navbar {
   margin-bottom: 0px;
 }
@@ -515,7 +519,7 @@ section {
   display: block;
 }
 
-#slide-5 .contact.text {
+#slide-5 .contact-text {
   font-size: 1.2em;
   width: 90%;
 }
