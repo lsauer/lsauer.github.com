@@ -73,6 +73,13 @@ module.exports = function(grunt){
                 }
             }
         },
+        autoprefixer:{
+            dist:{
+                files:{
+                    'src/css/compiled.css' : 'src/css/compiled.css'
+                }
+            }
+        },
         cssmin: {
             combine: {
                 files: {
@@ -104,21 +111,22 @@ module.exports = function(grunt){
                 'src/css/**/*.{css,less,scss}'
             ]
         }
-        });
+    });
 
-        // Add plugins
-        grunt.loadNpmTasks('grunt-contrib-sass');
-        grunt.loadNpmTasks('grunt-contrib-uglify');
-        grunt.loadNpmTasks('grunt-contrib-cssmin');
-        grunt.loadNpmTasks('grunt-contrib-watch');
-        grunt.loadNpmTasks('grunt-contrib-concat');
-        grunt.loadNpmTasks('grunt-contrib-jshint');
+    // Add plugins
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
-        // Register tasks
-        grunt.registerTask('build', ['cssmin','concat','uglify','jshint', 'sass']);
-        grunt.registerTask('default', ['watch']);
+    // Register tasks
+    grunt.registerTask('build', ['cssmin','concat','uglify','jshint','sass','autoprefixer']);
+    grunt.registerTask('default', ['watch']);
 
-        grunt.event.on('watch', function(action, filepath) {
+    grunt.event.on('watch', function(action, filepath) {
         grunt.log.writeln(filepath + ' has ' + action);
     });
 
