@@ -1,0 +1,54 @@
+/* Colorscheme: Print */
+
+/* This scheme is not available for selection. It is used only for the printing of your resume/CV */
+
+* { letter-spacing: 0!important; }
+
+body {
+	background: #fff;
+	margin: 0;
+	padding: 30px;
+}
+
+#wrap {
+	width: 100%;
+	padding: 0;
+	background-image: none;
+}
+
+#wrap, .titlecolumn { border: none!important; }
+
+.section { width: 100%; }
+
+.column, .largecolumn, .titlecolumn {
+	float: none;
+	clear: both;
+	width: 100%!important;
+	margin-left: 0;
+}
+
+.ruler {
+	width: 100%;
+	float: none;
+	clear: both;
+}
+
+.myphoto { display: none; }
+
+.topsection dl { margin-top: 0!important; }
+
+.socialmedia { display: none; }
+
+.skillbar { background: none; }
+
+.skillbarfill {
+	text-indent: 0;
+	font-size: 12px;
+	background: none;
+}
+
+.employer { margin-bottom: 30px; }
+
+.thumbs li { margin: 5px 20px 5px 0!important; }
+
+.cvoptions { display: none!important; }
