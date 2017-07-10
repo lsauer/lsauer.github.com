@@ -3,69 +3,13 @@
     src: url(../fonts/Rajdhani-Regular.ttf) format("truetype")
 }
 
-/* 01. CSS Reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block
-}
-
 ol, ul {
     list-style: none
-}
-
-blockquote, q {
-    quotes: none
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none
 }
 
 table {
     border-collapse: collapse;
     border-spacing: 0
-}
-
-/* 02. General &Layout */
-.styleswitch {
-    display: block;
-    background: #000;
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 30px;
-    text-align: center
-}
-
-.styleswitch ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline
-}
-
-.styleswitch ul li {
-    display: inline;
-    margin: 0 10px;
-    padding: 0
-}
-
-.styleswitch a {
-    color: #fc0 !important;
-    text-decoration: none
-}
-
-.styleswitch a:hover {
-    color: #fff !important
 }
 
 .clear:after {
@@ -92,29 +36,43 @@ table {
 
 /* Hide from IE/Mac */
 body {
-    line-height: 1;
+    line-height: 1em !important;
     background-color: #000;
     margin: 0 auto;
     padding: 0 0 30px 0;
-    font: normal 22px "Rajdhani-Regular", Arial, Tahoma, Verdana, sans-serif;
+    /*font: normal 2em "Rajdhani-Regular", Arial, Tahoma, Verdana, sans-serif !important;*/
+font: normal 2em "Helvetica Neue",Helvetica,Arial,sans-serif;
     letter-spacing: 1px;
     color: #444;
-    line-height: 26px
+    /*line-height: 26px*/
 }
 
 #wrap {
-    width: 900px;
+    font: normal 22px "Rajdhani-Regular", Arial, Tahoma, Verdana, sans-serif;
+
+    width: 950px;
     margin: 0 auto;
     padding: 30px;
     border-bottom: 5px solid #d90;
     background-color: #fff;
-    margin-top:10em;
+    margin-top: 8em;
+    margin-bottom: 4em;
 }
 
 @media print {
     #wrap {
         margin-top: 1em;
     }
+}
+
+#btn-language-switcher button.dropdown-toggle {
+    height: 32px;
+}
+
+.navbar * {
+    margin-bottom: 0;
+    text-decoration: none;
+    letter-spacing: 2px;
 }
 
 .stars-sup {
