@@ -33,10 +33,13 @@ jQuery(document).ready(
                     $(elText).contents().filter(function () {
                         return this.nodeType == 3
                     }).each(function () {
+
                         if (isLangAttrInitialized == false) {
                             $(elText).attr('data-lang-us', this.textContent);
                         }
-                        this.textContent = $(elText).data('lang-' + lang);
+                        if(this.textContent && this.textContent.trim() != ""){
+                            this.textContent = $(elText).data('lang-' + lang);
+                        }
                     });
 
                 });
