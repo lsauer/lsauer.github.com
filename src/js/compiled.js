@@ -2662,10 +2662,8 @@ jQuery(document).ready(
         window.scrollTo(0, 0);
     };
 
-    var page = '';
-    //execute page specific
+    //execute page specific functions
     if( $('#page-curriculum').length ) {
-        page = 'curriculum';
         var loc = document.location.search;
         var splt;
         var pglang;
@@ -2721,10 +2719,11 @@ jQuery(document).ready(
         $(el).on('click', function () {
             var lang = $(this).data('lang-type');
             var objurl = $('#href-curriculum');
-            var url_curr = objurl.attr('href').replace( /[?]lang=(.*)/, '?lang=') + lang;
-            objurl.attr('href', url_curr);
+            if( objurl.length ){
+                var url_curr = objurl.attr('href').replace( /[?]lang=(.*)/, '?lang=') + lang;
+                objurl.attr('href', url_curr);
+            }
             switchLanguage.call(this, lang);
-
         });
     });
 
