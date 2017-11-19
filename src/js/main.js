@@ -18,11 +18,26 @@ jQuery(document).ready(
         window.scrollTo(0, 0);
     };
 
+    //execute page specific functions
+    if( $('#page-curriculum').length ) {
+        var loc = document.location.search;
+        var splt;
+        var pglang;
+        if(loc){
+            splt = loc.split('=');
+            indx = splt.indexOf('?lang');
+            if(indx != -1){
+                pglang = splt[indx + 1];
+                switchLanguage.call($('#btn-language-switcher'), pglang);
+            }
+        }
+
+    }
+
     // initialize the language switcher
     var isLangAttrInitialized = false;
-    $("#lang-switcher > li").each(function (i, el) {
-        $(el).on('click', function () {
-            var lang = $(this).data('lang-type');
+
+        function switchLanguage(lang) {
             $('#btn-language-switcher ul > li').removeClass('disabled');
             $(this).addClass('disabled');
             //replace all texts with the ones retrieved in the elements
@@ -37,7 +52,7 @@ jQuery(document).ready(
                         if (isLangAttrInitialized == false) {
                             $(elText).attr('data-lang-us', this.textContent);
                         }
-                        if(this.textContent && this.textContent.trim() != ""){
+                        if (this.textContent && this.textContent.trim() != "") {
                             this.textContent = $(elText).data('lang-' + lang);
                         }
                     });
@@ -54,6 +69,15 @@ jQuery(document).ready(
             } catch (err) {
                 console.log("error: ", err)
             }
+        }
+
+        $("#lang-switcher > li").each(function (i, el) {
+        $(el).on('click', function () {
+            var lang = $(this).data('lang-type');
+            var objurl = $('#href-curriculum');
+            var url_curr = objurl.attr('href').replace( /[?]lang=(.*)/, '?lang=') + lang;
+            objurl.attr('href', url_curr);
+            switchLanguage.call(this, lang);
 
         });
     });
