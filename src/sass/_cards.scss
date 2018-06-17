@@ -1,5 +1,9 @@
 @import "config";
 
+.row .info-card:first-child {
+    margin-left: 0px;
+}
+
 .info-card {
     float: left;
     margin: 1em;
@@ -76,6 +80,10 @@
     background-size: contain;
     background-color: $color-light;
     opacity: .9;
+}
+
+.logo-virtuallylive {
+    background-image: url(../images/logo_virtuallylive.jpg);
 }
 
 .logo-ixolit {

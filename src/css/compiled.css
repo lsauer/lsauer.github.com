@@ -1,49 +1,17 @@
 /* shake animation */
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-@-webkit-keyframes shake {
-  10%, 90% {
-    -webkit-transform: translate3d(-1px, 0, 0);
-            transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    -webkit-transform: translate3d(2px, 0, 0);
-            transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    -webkit-transform: translate3d(-4px, 0, 0);
-            transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    -webkit-transform: translate3d(4px, 0, 0);
-            transform: translate3d(4px, 0, 0);
-  }
-}
 @keyframes shake {
   10%, 90% {
-    -webkit-transform: translate3d(-1px, 0, 0);
-            transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
   }
   20%, 80% {
-    -webkit-transform: translate3d(2px, 0, 0);
-            transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
   }
   30%, 50%, 70% {
-    -webkit-transform: translate3d(-4px, 0, 0);
-            transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
   }
   40%, 60% {
-    -webkit-transform: translate3d(4px, 0, 0);
-            transform: translate3d(4px, 0, 0);
-  }
-}
-@-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  40% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    transform: translate3d(4px, 0, 0);
   }
 }
 @keyframes sk-bouncedelay {
@@ -56,6 +24,10 @@
     transform: scale(1);
   }
 }
+.row .info-card:first-child {
+  margin-left: 0px;
+}
+
 .info-card {
   float: left;
   margin: 1em;
@@ -132,6 +104,10 @@
   opacity: .9;
 }
 
+.logo-virtuallylive {
+  background-image: url(../images/logo_virtuallylive.jpg);
+}
+
 .logo-ixolit {
   background-image: url(../images/logo_ixolit.jpg);
 }
@@ -183,8 +159,7 @@
   }
 
   .backLocation, .frontLocation {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
 
   .info-card {
@@ -379,12 +354,10 @@ html.touch #nav-anchor-4 {
   z-index: 100;
 }
 .profile-icons img {
-  transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
 }
 .profile-icons img:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .gi-navbar {
@@ -450,10 +423,7 @@ html.touch #nav-anchor-4 {
   opacity: .8;
   background: #ddd;
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: default !important;
 }
 
@@ -465,6 +435,8 @@ html.touch #nav-anchor-4 {
 .loaded section,
 .no-js section {
   opacity: 1;
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
   transition: opacity 300ms ease-out;
 }
 
@@ -635,16 +607,10 @@ html.touch #nav-anchor-4 {
 }
 
 .content {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background: #f5f5f5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   min-height: 100vh;
   padding-bottom: 72px;
   padding-top: 72px;
@@ -727,8 +693,7 @@ html.touch #nav-anchor-4 {
 }
 
 #slide-1-container {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  transform: scale(0.7);
   position: relative;
   background-position: -50% 0%;
   background-color: #111;
@@ -754,8 +719,7 @@ html.touch #nav-anchor-4 {
 }
 @media (min-width: 800px) {
   #slide-1-container {
-    -webkit-transform: scale(1) !important;
-            transform: scale(1) !important;
+    transform: scale(1) !important;
     margin-top: 10em !important;
     margin-left: auto;
     padding-left: 10%;
@@ -771,8 +735,7 @@ html.touch #nav-anchor-4 {
 .profile-mobile {
   background-image: url("../images/screenshots/unit_converter_ui.png");
   background-position: 50% 20% !important;
-  -webkit-filter: hue-rotate(60%);
-          filter: hue-rotate(60%);
+  filter: hue-rotate(60%);
 }
 
 .profile-desktop {
@@ -781,15 +744,13 @@ html.touch #nav-anchor-4 {
   background-image: url("../images/screenshots/dotnet_msdb_sync.jpg");
   background-position: 40% 80% !important;
   transition: all 1s ease-in-out;
-  -webkit-filter: hue-rotate(60%);
-          filter: hue-rotate(60%);
+  filter: hue-rotate(60%);
 }
 
 .profile-web {
   background-image: url("../images/screenshots/cloud_content_ui.jpg");
   background-position: 20% 40% !important;
-  -webkit-filter: hue-rotate(60%);
-          filter: hue-rotate(60%);
+  filter: hue-rotate(60%);
 }
 
 .background-slide {
@@ -843,14 +804,10 @@ ul.profile-list > li:hover,
   font-weight: bolder;
   background-color: #000;
   border-radius: 10em;
-  -webkit-animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-          animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
   opacity: .8;
 }
 
@@ -1048,3 +1005,5 @@ section {
   min-width: 400px;
   opacity: 0;
 }
+
+/*# sourceMappingURL=compiled.css.map */

@@ -2675,8 +2675,12 @@ jQuery(document).ready(
                 switchLanguage.call($('#btn-language-switcher'), pglang);
             }
         }
-
     }
+    
+    $('#dropdown-toggle-split-left').on('click', function(e){
+        $('#dropdown-toggle-split-right').trigger('click');
+        e.stopPropagation();
+    });    
 
     // initialize the language switcher
     var isLangAttrInitialized = false;

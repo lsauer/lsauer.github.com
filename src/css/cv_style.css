@@ -270,9 +270,9 @@ h1.myname {
 h4.myjob {
     font: normal bold 24px Arial, Tahoma, Verdana, sans-serif;
     color: #444;
-    margin: 0;
+    margin-top: 5px;
     padding: 0;
-    line-height: 66px;
+    line-height: 36px;
     letter-spacing: -1px
 }
 

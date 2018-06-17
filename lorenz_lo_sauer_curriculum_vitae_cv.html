@@ -49,12 +49,12 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 
     <div class="btn-group btn-language" id="btn-language-switcher" data-lang-type-current="us">
-        <button class="btn btn-md btn-flag">
+        <button class="btn btn-md btn-flag" id="dropdown-toggle-split-left">
             <ul class="f32">
                 <li id="btn-language-flag" class="flag us"></li>
             </ul>
         </button>
-        <button data-toggle="dropdown" class="btn btn-md dropdown-toggle"><span class="caret"></span></button>
+        <button data-toggle="dropdown" class="btn btn-md dropdown-toggle" id="dropdown-toggle-split-right"><span class="caret"></span></button>
         <ul class="dropdown-menu" id="lang-switcher">
             <li data-lang-type="es">
                 <ul class="f32" data-lang-us="Spanish" data-lang-de="Spanisch" data-lang-es="Español">
@@ -126,19 +126,19 @@
                 <li><strong data-lang-de="E-Mail:" data-lang-es="Correo electrónico:">Email:</strong> <a
                         href="mailto://lorenz.lo.sauer@gmail.com" target="_blank">lorenz.lo.sauer@gmail.com</a>
                 </li>
-                <li><strong data-lang-de="Webseite:" data-lang-es="Página web:">Website:</strong> <a href="https://lsauer.github.io"
-                                                                            target="_blank">http://lsauer.github.io</a>
+                <li><strong data-lang-de="Webseite:" data-lang-es="Página web:">Website:</strong> <a href="https://lsauer.net"
+                                                                            target="_blank">http://lsauer.net</a>
                 </li>
-                <li><strong data-lang-de="Telefon" data-lang-es="Teléfono">Phone</strong>: (+34) 6443 71 859</li>
+                <li><strong data-lang-de="Telefon" data-lang-es="Teléfono">Phone</strong>: (+34) 6443 71 859 <!-- / alt: (+43) 670 206 0226 --></li>
                 <li><strong data-lang-de="Nationalität" data-lang-es="Nacionalidad">Nationality</strong>: <span
                         data-lang-de="Österreicher" data-lang-es="Austríaca">Austrian</span></li>
                 <li><strong data-lang-de="Titel" data-lang-es="Títulos">Titles</strong>: Mag.rer.nat. ("M.Sc."), B.Sc.</li>
                 <li><strong data-lang-de="Vollständiger Name" data-lang-es="Nombre completo">Full Name</strong>: Mag. Lorenz LO Sauer, B.Sc.</li>
                 <li><strong data-lang-de="Verfügbarkeit" data-lang-es="Disponibilidad">Availability</strong>:
                     <!--<span data-lang-de="Sofort; Malaga, Spanien" data-lang-es="Inmediato; Málaga, España">Immediate; Malaga, Spain</span></li>-->
-                    <span data-lang-de="Vollzeitbeschäftigt; Malaga, Spanien" data-lang-es="Empleado a tiempo completo; Málaga, España">Employed (Full-Time); Malaga, Spain</span></li>
+                    <span data-lang-de="unmittelbar; D-A-CH" data-lang-es="comienzo inmediato; D-A-CH">Immediate Start, D-A-CH</span></li>
                 <li><strong data-lang-de="Derzeitiger Wohnort" data-lang-es="Ciudad actual">Current City</strong>:
-                    <span data-lang-de="Málaga, Spanien" data-lang-es="Málaga, España">Málaga, Spain</span></li>
+                    <span data-lang-de="Wien, Österreich" data-lang-es="Viena, Austria">Vienna, Austria</span></li>
                 <li><strong data-lang-de="Geburtsjahr" data-lang-es="Año de nacimiento">Birthyear</strong>: 1984</li>
                 <li><strong data-lang-de="Führerschein" data-lang-es="Licencia de conducir">Drivers License</strong>: AM, B</li>
                 <li><strong data-lang-de="Spanische Número de Identidad de Extranjero" data-lang-es="N.I.E.">Spanish N.I.E.</strong>: Y5491286G</li>
@@ -155,17 +155,9 @@
             &amp; Professional Profile</h2></div>
 
         <div class="largecolumn">
-            <p data-lang-de="Lorenz zeigt Begabung und Leidenschaft für die Gestaltung von Software-Benutzeroberflächen, während er sich gedanklich in die Rolle der Benutzer hineinversetzt." data-lang-es="Lorenz tiene un don y pasión por diseñar interfaces de usuario de software, mientras se pone en la piel de los usuarios.">
-                Lorenz has a gift and passion for designing software user interfaces, whilst putting himself in the
-                shoes
-                of the users.</p>
-            <p data-lang-de="Er verfügt über jahrelange, professionellen Programmierkenntnisse in Teams. Mit Hilfe von marktführenden Software und Programmiersprachen, erzeugt Lorenz wartbare Software, geleitet von einer agilen Philosophie." data-lang-es="Él lleva muchos años de experiencia de programación profesional, trabajando en equipos, utilizando herramientas y lenguajes de programación de vanguardia. Lorenz ofrece software de mantenimiento con una filosofía ágil.">
-                He brings along many years of professional programming experience working in teams. Utilizing cutting
-                edge tools and programming languages, Lorenz delivers maintainable software with an agile
-                philosophy.</p>
-            <p data-lang-de="Seine Arbeit ist geprägt von einem robusten Verständnis, der kritischen Forderung und Begutachtung der Benutzer bei einem Produktstart." data-lang-es="Su trabajo está marcado con una sólida comprensión de lo que se demanda a la hora de lanzar un producto a un público crítico.">
-                His work is marked with a robust understanding of what is demanded at the hour of launching a
-                product to a critical audience.</p>
+            <p data-lang-de="Lorenz hat eine Begabung und Leidenschaft für das Entwerfen von Software , während er sich in die Rolle der Benutzer hineinversetzt." data-lang-es="Lorenz tiene destreza y pasión para diseñar y idear software , poniéndose en el lugar de los usuarios">Lorenz has a gift and passion for designing software and architecting software, whilst putting himself in the shoes of the users.</p>
+            <p data-lang-de="Er arbeitet mit technischen und nicht-technischen Mitarbeitern in agilen Umgebungen konsequent zusammen und übertrifft die Anforderungen." data-lang-es="Está a gusto trabajando junto a personas técnicas y no técnicas en entornos ágiles, y consistentemente supera los requisitos.">He is at ease working alongside technical and non-technical people in agile environments, and consistently exceeds requirements.</p>
+            <p data-lang-de="Seine Endergebnisse sind gezeichnet von einem robusten Verständnis der Kundenbedürfnisse bei dem Start des Produktes vor einem kritischen Publikum." data-lang-es="Sus resultados finales son marcados con una sólida comprensión de lo que el cliente necesita a la hora de lanzar el producto a un público crítico.">His end results are marked with a robust understanding of what the client needs at the hour of launching the product to a critical audience.</p>
         </div>
 
         <div class="clear"></div>
@@ -373,6 +365,120 @@
             <!-- Start: Job -->
 
             <div class="column employer">
+                <h3 data-lang-de="Senior Server Developer" data-lang-es="Desarrollador Senior de Servidores">Senior Server Developer</h3>
+                <h4 data-lang-de="Virtually Live" data-lang-es="Virtually Live">Virtually Live</h4>
+
+                <ul class="simplelist mt30">
+                    <li><strong data-lang-de="Ort:" data-lang-es="Ubicación:">Location:</strong> <span
+                            data-lang-de="Malaga in Spanien" data-lang-es="Málaga, España">Málaga, Spain</span></li>
+                    <li><strong data-lang-de="Zeitraum:" data-lang-es="Período:">Period:</strong>
+                        <span data-lang-de="Jänner 2018 - Juli 2018" data-lang-es="Enero 2018 - Julio 2018">January 2018 - July 2018</span>
+                    </li>
+                    <li><strong data-lang-de="Art der Beschäftigung:" data-lang-es="Tipo de trabajo:">Job type:</strong> <span data-lang-de="Vollzeit" data-lang-es="Empleado a jornada completa">Full-Time</span></li>
+                    <li><strong data-lang-de="Referenzen:" data-lang-es="Referencias:">References:</strong> Jesús Hormigo</li>
+                    <li class="employer-tools"><strong data-lang-de="Tools:" data-lang-es="Herramientas:">Tools:</strong> javascript; nodejs;
+                        python; Archonda;
+                        jquery UI; AngularJS; Docker-CE; AWS (Route53
+                        EC2;
+                        ECS;
+                        EFS;
+                        VPC;
+                        S3;
+                        ElastiCache;
+                        Certificate Manger;
+                        Amazon Lex and Polly;
+                        SNS, SQS, SES;
+                        Workspaces;
+                        Gamelift;
+                        AWS IoT;
+                        KMS;
+                        Kinesis;
+                        Data Pipeline;
+                        Elastic Map Reduce;
+                        Lambda;
+                        Auto Scaling Groups;
+                        DynamoDB;
+                        RDS
+                        ); Terraform; Logstash; PHP Silex; OpenAPI; Swagger;
+                        Linux; VIM; Jenkins;
+                        .NET Core latest; Visual Studio; Webstorm;
+                    </li>
+                </ul>
+            </div>
+
+            <div class="column lastcolumn jobdescription">
+                <p data-lang-de="Verantwortlich für den Aufbau der skalierbaren Server-Architektur für ein Social / Multiplayer VR-Sporterlebnis, damit Menschen rund um den Globus ihre Lieblingsrennen gemeinsam genießen können. Es verwendet GPS- und Telemetriedaten der Formel E, um das Rennen so real wie möglich darzustellen. Der demonstrierte frühe Produkttest erzielte einen Marketing-Deal mit der Formel E."
+                   data-lang-es="A cargo de la construcción de la arquitectura de servidor escalable para experiencias de realidad virtual multijugador para que las personas de todo el mundo puedan disfrutar de sus carreras favoritas juntas. Se utiliza datos de GPS y telemetría proporcionados por la Fórmula E para representar la carrera lo más real posible. La prueba de producto temprana demostrada logró un acuerdo con la Fórmula E.">
+                    In charge of building the scalable server architecture for a social/multiplayer VR sports experiences to allow people around the globe to enjoy its favourite races together. It uses GPS and telemetry data given by Formula E to represent the race as real as possible.
+                    The demonstrated early product test achieved a marketing deal with Formula E.
+                </p>
+                <ul>
+                    <li><span data-lang-de="Effiziente testgetriebene Entwicklung mit NUnit / NS Substitute und benutzerdefinierten Mockingtests mit fast 1000 Tests.
+" data-lang-es="Desarrollo basado en pruebas eficientes usando NUnit / NSubstitute y pruebas de mocking personalizadas con casi 1000 pruebas.">
+Efficient Test Driven Development using NUnit / NSubstitute and custom mocking tests with almost 1000 tests.
+                    </span>
+                    </li>
+                    <li>
+                        <span data-lang-de="Implementieren des gesamten DevOps-Stacks und Automatisierungsprozesses für CI / CD basierend auf dem Erstellen und Ausführen von Docker-Containern bei jedem Commit und absolvieren von erfolgreichen Softwaretests
+ der vorhandenen AWS-Infrastruktur mit bis zu 80% Kosteneinsparungen" data-lang-es="Implementar toda la pila de DevOps y el proceso de automatización para CI / CD basados ​​en la construcción y ejecución de contenedores Docker en cada confirmación y pruebas de software exitosas
+">
+Implementing the entire DevOps stack and automation process for CI / CD based on building and running Docker containers upon each commit and succeeded software tests
+
+                        </span>
+                    </li>
+                    <li>
+                        <span data-lang-de="Audits und Backup-Automatisierung mittels AWS S3 aller Unternehmensaspekte und laufenden Operationen
+" data-lang-es="Automatización de auditoría y copia de seguridad para AWS S3 de todos los aspectos de la empresa y operaciones en ejecución
+">
+Auditing and Backup automation to AWS S3 of all company aspects and running operations
+                        </span>
+                    </li>
+                    <li>
+                        <span data-lang-de="Perforce-Administration und Einrichten einer Replikation
+" data-lang-es="Perforce administración y configurar una replicación">
+Perforce administration and setting up a replication
+
+                        </span>
+                    </li>
+                    <li>
+                        <span data-lang-de="Einrichtung eines hoch redundanten, verfügbaren Datenbank-Replikationssystems und Berücksichtigung eventueller Konsistenz in der Backend-Codebasis
+" data-lang-es="Configuración de un sistema de replicación de bases de datos altamente redundante y disponible, y teniendo en cuenta la posible coherencia en la base de código de back-end.
+">
+Setting up a highly redundant, available database replication system and accounting for eventual consistency in the backend code-base
+
+                        </span>
+                    </li>
+                    <li>
+                        <span data-lang-de="Hochperformantes .NET ASP Core-Basis-Backend mit Antwortzeiten zwischen 1ms und 15ms, um eine gut geölte Microservice-Infrastruktur zu ermöglichen
+" data-lang-es="Back-end base .NET ASP Core de alto rendimiento con tiempos de respuesta entre 1 ms y 15 ms, para facilitar una infraestructura de microservicio bien engrasada
+">
+Highly performing .NET ASP Core base backend with response times between 1ms to 15ms, to facilitate a well-oiled microservice infrastructure
+
+                        </span>
+                    </li>
+                    <li>
+                        <span data-lang-de="Verwenden von Terraform zum Schreiben von Dateien, die die Cloud-Infrastruktur auf eine vom Anbieter unabhängige Art und Weise reproduzieren und versionieren lassen
+" data-lang-es="Usar Terraform para escribir archivos que proporcionen de forma reproducible la infraestructura de la nube de una manera independiente y hacer que git versionen
+">
+Using Terraform to write files that reproducibly provision cloud infrastructure in a vendor agnostic way and have them git versioned
+                        </span>
+                    </li>
+                    <li>
+                        <span data-lang-de="Tägliche Anwendung von AWS zum Speichern von Dateien der Spielclients und überwachen der Serverinfrastruktur.
+" data-lang-es="Usando AWS diariamente para almacenar archivos de los clientes del juego y monitoreo de la infraestructura del servidor.
+">
+Using AWS on a daily basis to store files of the game client and monitor the server infrastructure.
+                        </span>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Start: Job -->
+
+            <div class="ruler"></div>
+            <!-- Start: Job -->
+
+            <div class="column employer">
                 <h3 data-lang-de="Full Stack & Server Entwickler" data-lang-es="Desarrollador Full Stack y Servidores">Full Stack / Server Developer</h3>
                 <h4 data-lang-de="Virtually Live" data-lang-es="Virtually Live">Virtually Live</h4>
 
@@ -380,7 +486,7 @@
                     <li><strong data-lang-de="Ort:" data-lang-es="Ubicación:">Location:</strong> <span
                             data-lang-de="Malaga in Spanien" data-lang-es="Málaga, España">Málaga, Spain</span></li>
                     <li><strong data-lang-de="Zeitraum:" data-lang-es="Período:">Period:</strong>
-                        <span data-lang-de="Juni 2017 - Gegenwart" data-lang-es=" Junio 2017 - actualidad">Junio 2017 - present day</span>
+                        <span data-lang-de="Juni 2017 - Dezember 2017" data-lang-es=" Junio 2017 - Diciembre 2017">June 2017 - December 2017</span>
                     </li>
                     <li><strong data-lang-de="Art der Beschäftigung:" data-lang-es="Tipo de trabajo:">Job type:</strong> <span data-lang-de="Vollzeit" data-lang-es="Empleado a jornada completa">Full-Time</span></li>
                     <li><strong data-lang-de="Referenzen:" data-lang-es="Referencias:">References:</strong> Jesús Hormigo</li>
@@ -475,7 +581,7 @@
             <!-- Start: Job -->
 
             <div class="ruler"></div>
-
+    <!-- Start: 2018-->
         <!-- Start: Job -->
         <div class="largecolumn">
             <!-- Start: Job -->

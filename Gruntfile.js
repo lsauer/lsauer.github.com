@@ -123,7 +123,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-autoprefixer');
 
     // Register tasks
-    grunt.registerTask('build', ['cssmin','concat','uglify','jshint','sass','autoprefixer']);
+    grunt.registerTask('build', ['sass','cssmin','concat','uglify','jshint','autoprefixer']);
     grunt.registerTask('default', ['watch']);
 
     grunt.event.on('watch', function(action, filepath) {
